@@ -25,7 +25,7 @@ function App() {
         setLoading(false);
         setNextPageUrl(res.data.next);
         setPrevPageUrl(res.data.previous);
-        setPokemon(res.data.results.map((pokemon) => pokemon.name));
+        setPokemon(res.data.results);
       });
     // clean slate
     return () => cancel();
