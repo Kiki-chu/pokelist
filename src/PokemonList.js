@@ -1,10 +1,11 @@
 import React from "react";
+import Pokemon from "./Pokemon";
 
 export default function PokemonList({ pokemon }) {
   return (
     <div className="screen">
       {pokemon.map((pokemon) => (
-        <div key={pokemon}>{pokemon}</div>
+        <Pokemon key={pokemon.name} pokemon={pokemon} />
       ))}
     </div>
   );

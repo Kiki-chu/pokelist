@@ -44,3 +44,18 @@ code {
 .button:hover {
   background-color: #b3a125;
 }
+
+.pokemon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.pokemon > p {
+  flex: 1;
+}
+
+.pokemon > img {
+  max-height: 100px;
+}
